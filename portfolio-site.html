@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FM - Développement Web & Mobile</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,17 +26,11 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
         <div class="hero-content">
-            <h1>
-                Transformez vos idées en <br>
-                <span class="highlight">applications exceptionnelles</span>
-            </h1>
-            <p>
-                Développeurs web et mobile passionnés, nous créons des solutions digitales
-                sur-mesure pour propulser votre entreprise vers le succès.
-            </p>
+            <h1>Transformez vos idées en <br><span class="highlight">applications exceptionnelles</span></h1>
+            <p>Développeurs web et mobile passionnés, nous créons des solutions digitales sur-mesure pour propulser votre entreprise vers le succès.</p>
             <div class="cta-buttons">
                 <a href="#contact" class="btn btn-primary">Demander un devis</a>
                 <a href="#portfolio" class="btn btn-secondary">Voir nos projets</a>
@@ -46,250 +38,186 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services -->
     <section id="services">
         <div class="section-header reveal">
             <div class="section-tag">Nos Services</div>
             <h2 class="section-title">Ce que nous faisons de mieux</h2>
-            <p class="section-subtitle">
-                Des prestations complètes pour tous vos besoins digitaux
-            </p>
+            <p class="section-subtitle">Des prestations complètes pour tous vos besoins digitaux</p>
         </div>
-
         <div class="services-grid">
             <div class="service-card reveal">
-                <span class="service-icon">📱</span>
-                <h3>Applications Mobile</h3>
-                <p>
-                    Développement d'applications iOS et Android natives ou cross-platform,
-                    alliant performance et expérience utilisateur exceptionnelle.
-                </p>
-            </div>
-
-            <div class="service-card reveal">
                 <span class="service-icon">💻</span>
-                <h3>Sites Web Sur-Mesure</h3>
-                <p>
-                    Création de sites web modernes, responsives et optimisés SEO,
-                    du site vitrine à la plateforme e-commerce complexe.
-                </p>
+                <h3>Création de sites internet</h3>
+                <p>Sites vitrines, portfolios, e-commerce ou plateformes sur-mesure — nous concevons des sites modernes, rapides et optimisés pour tous les écrans.</p>
+                <ul class="service-list">
+                    <li>Design responsive & moderne</li>
+                    <li>Optimisation SEO</li>
+                    <li>Expérience utilisateur soignée</li>
+                </ul>
             </div>
-
             <div class="service-card reveal">
-                <span class="service-icon">🔄</span>
-                <h3>Refonte & Modernisation</h3>
-                <p>
-                    Mise à jour et optimisation de vos applications existantes pour
-                    améliorer les performances et l'expérience utilisateur.
-                </p>
+                <span class="service-icon">📱</span>
+                <h3>Création d'applications</h3>
+                <p>Applications iOS et Android natives ou cross-platform, pensées pour être performantes, intuitives et taillées pour vos besoins métier.</p>
+                <ul class="service-list">
+                    <li>iOS & Android</li>
+                    <li>Interface intuitive</li>
+                    <li>Intégration API & backend</li>
+                </ul>
             </div>
-
             <div class="service-card reveal">
                 <span class="service-icon">🛠️</span>
                 <h3>Maintenance & Support</h3>
-                <p>
-                    Support technique continu, corrections de bugs et évolutions
-                    pour garantir le bon fonctionnement de vos applications.
-                </p>
-            </div>
-
-            <div class="service-card reveal">
-                <span class="service-icon">🎨</span>
-                <h3>UI/UX Design</h3>
-                <p>
-                    Conception d'interfaces intuitives et attrayantes, pensées
-                    pour offrir la meilleure expérience à vos utilisateurs.
-                </p>
-            </div>
-
-            <div class="service-card reveal">
-                <span class="service-icon">⚡</span>
-                <h3>Optimisation & Performance</h3>
-                <p>
-                    Audit et amélioration des performances de vos applications
-                    pour une expérience fluide et rapide.
-                </p>
+                <p>Votre projet livré, on reste là. Mises à jour, corrections, évolutions — nous assurons la continuité et la stabilité de vos outils digitaux.</p>
+                <ul class="service-list">
+                    <li>Suivi technique continu</li>
+                    <li>Corrections & mises à jour</li>
+                    <li>Accompagnement personnalisé</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- Portfolio -->
     <section id="portfolio">
         <div class="section-header reveal">
             <div class="section-tag">Portfolio</div>
             <h2 class="section-title">Nos Réalisations</h2>
-            <p class="section-subtitle">
-                Découvrez quelques-uns des projets sur lesquels nous avons travaillé
-            </p>
+            <p class="section-subtitle">Découvrez quelques-uns des projets sur lesquels nous avons travaillé</p>
         </div>
 
-        <div class="portfolio-grid">
-            <!-- Projet 1 -->
-            <div class="portfolio-item reveal">
-                <div class="portfolio-image" style="background: linear-gradient(135deg, #1e9aa1 0%, #081c34 100%);">
-                    📚
+        <div class="portfolio-slider">
+            <button class="slider-arrow slider-arrow--left" onclick="slidePortfolio(-1)">&#8592;</button>
+
+            <div class="slider-track" id="sliderTrack">
+                <div class="slide active">
+                    <div class="slide-image" style="background: linear-gradient(135deg, #1e9aa1 0%, #081c34 100%);">
+                        <span class="slide-emoji">📚</span>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-number">01 / 03</div>
+                        <div class="section-tag">Application Mobile</div>
+                        <h3>Conjugaison Multilingue</h3>
+                        <p>Une application mobile complète permettant d'apprendre et pratiquer la conjugaison des verbes en espagnol et en anglais. L'utilisateur peut s'exercer à travers des quiz interactifs, suivre sa progression au fil du temps et consulter des tableaux de conjugaison détaillés pour chaque temps et mode.</p>
+                        <p>Le projet a été pensé pour être intuitif et engageant, avec un système de niveaux progressifs et des rappels quotidiens pour maintenir l'apprentissage sur la durée.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="portfolio-content">
-                    <h3>Conjugaison Multilingue</h3>
-                    <p>
-                        Application mobile de conjugaison de verbes en espagnol et anglais,
-                        avec exercices interactifs et suivi de progression.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">React Native</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Firebase</span>
+
+                <div class="slide">
+                    <div class="slide-image" style="background: linear-gradient(135deg, #a5340f 0%, #1e9aa1 100%);">
+                        <span class="slide-emoji">🗺️</span>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-number">02 / 03</div>
+                        <div class="section-tag">Application Web</div>
+                        <h3>Application de Cartographie</h3>
+                        <p>Une solution de cartographie interactive permettant à ses utilisateurs de visualiser, créer et partager des points d'intérêt géolocalisés en temps réel. L'interface propose plusieurs couches cartographiques, des filtres avancés et un mode hors-ligne pour une utilisation sur le terrain.</p>
+                        <p>L'application intègre une API de routage pour calculer des itinéraires optimisés, ainsi qu'un système de notifications pour alerter les utilisateurs d'événements à proximité de leur position.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Mapbox</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-image" style="background: linear-gradient(135deg, #081c34 0%, #1e9aa1 100%);">
+                        <span class="slide-emoji">🛒</span>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-number">03 / 03</div>
+                        <div class="section-tag">Site E-commerce</div>
+                        <h3>Plateforme E-commerce</h3>
+                        <p>Une plateforme e-commerce sur-mesure avec catalogue produit complet, gestion des stocks en temps réel, paiements sécurisés multi-devises et un tableau de bord administrateur permettant de piloter l'ensemble de l'activité commerciale.</p>
+                        <p>Le site inclut un moteur de recommandations personnalisées, un système de codes promo, la gestion des retours et un module d'analyse des ventes avec exports automatisés pour la comptabilité.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Stripe</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Projet 2 -->
-            <div class="portfolio-item reveal">
-                <div class="portfolio-image" style="background: linear-gradient(135deg, #a5340f 0%, #1e9aa1 100%);">
-                    🗺️
-                </div>
-                <div class="portfolio-content">
-                    <h3>Application de Cartographie</h3>
-                    <p>
-                        Solution de cartographie interactive avec géolocalisation en temps réel
-                        et gestion de points d'intérêt personnalisés.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Mapbox</span>
-                        <span class="tech-tag">Node.js</span>
-                    </div>
-                </div>
-            </div>
+            <button class="slider-arrow slider-arrow--right" onclick="slidePortfolio(1)">&#8594;</button>
 
-            <!-- Projet 3 -->
-            <div class="portfolio-item reveal">
-                <div class="portfolio-image" style="background: linear-gradient(135deg, #081c34 0%, #1e9aa1 100%);">
-                    🛒
-                </div>
-                <div class="portfolio-content">
-                    <h3>Plateforme E-commerce</h3>
-                    <p>
-                        Site e-commerce complet avec gestion des stocks, paiements sécurisés
-                        et tableau de bord administrateur.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Vue.js</span>
-                        <span class="tech-tag">Stripe</span>
-                        <span class="tech-tag">MongoDB</span>
-                    </div>
-                </div>
+            <div class="slider-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about">
         <div class="section-header reveal">
             <div class="section-tag">À Propos</div>
             <h2 class="section-title">Qui sommes-nous ?</h2>
         </div>
-
         <div class="about-content">
             <div class="about-text reveal">
                 <h3>Une équipe de développeurs passionnés</h3>
-                <p>
-                    Nous sommes une équipe dynamique de développeurs web et mobile,
-                    spécialisés dans la création d'applications modernes et performantes.
-                    Notre approche allie expertise technique et créativité pour transformer
-                    vos idées en solutions digitales innovantes.
-                </p>
-                <p>
-                    Que vous soyez une startup en pleine croissance, une PME cherchant à
-                    digitaliser ses processus, ou une grande entreprise nécessitant une
-                    solution sur-mesure, nous mettons notre savoir-faire à votre service
-                    pour concrétiser votre projet.
-                </p>
-
+                <p>Nous sommes une équipe dynamique de développeurs web et mobile, spécialisés dans la création d'applications modernes et performantes. Notre approche allie expertise technique et créativité pour transformer vos idées en solutions digitales innovantes.</p>
+                <p>Que vous soyez une startup en pleine croissance, une PME cherchant à digitaliser ses processus, ou une grande entreprise nécessitant une solution sur-mesure, nous mettons notre savoir-faire à votre service pour concrétiser votre projet.</p>
                 <div class="skills-list">
-                    <div class="skill-item">
-                        <span class="skill-icon">⚛️</span>
-                        React & React Native
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">🟢</span>
-                        Node.js & Express
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">🐍</span>
-                        Python & Django
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">💚</span>
-                        Vue.js & Nuxt
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">📊</span>
-                        MongoDB & PostgreSQL
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-icon">☁️</span>
-                        AWS & Cloud Services
-                    </div>
+                    <div class="skill-item"><span class="skill-icon">⚛️</span> React & React Native</div>
+                    <div class="skill-item"><span class="skill-icon">🟢</span> Node.js & Express</div>
+                    <div class="skill-item"><span class="skill-icon">🐍</span> Python & Django</div>
+                    <div class="skill-item"><span class="skill-icon">💚</span> Vue.js & Nuxt</div>
+                    <div class="skill-item"><span class="skill-icon">📊</span> MongoDB & PostgreSQL</div>
+                    <div class="skill-item"><span class="skill-icon">☁️</span> AWS & Cloud Services</div>
                 </div>
             </div>
-
-            <div class="about-visual reveal">
-                💻
-            </div>
+            <div class="about-visual reveal">💻</div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact">
         <div class="section-header reveal">
             <div class="section-tag">Contact</div>
             <h2 class="section-title">Discutons de votre projet</h2>
-            <p class="section-subtitle">
-                Prêt à démarrer ? Contactez-nous pour un devis gratuit
-            </p>
+            <p class="section-subtitle">Prêt à démarrer ? Contactez-nous pour un devis gratuit</p>
         </div>
-
         <div class="contact-wrapper">
             <form class="contact-form reveal" onsubmit="handleSubmit(event)">
                 <div class="form-group">
                     <label for="name">Nom complet</label>
                     <input type="text" id="name" name="name" required>
                 </div>
-
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-
                 <div class="form-group">
                     <label for="phone">Téléphone</label>
                     <input type="tel" id="phone" name="phone">
                 </div>
-
                 <div class="form-group">
                     <label for="message">Décrivez votre projet</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
-
-                <button type="submit" class="btn btn-primary" style="width: 100%;">
-                    Envoyer le message
-                </button>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer le message</button>
             </form>
-
             <div class="contact-info">
                 <div class="contact-item reveal">
                     <span class="contact-item-icon">📧</span>
                     <h4>Email</h4>
                     <p>contact@fm-dev.fr</p>
                 </div>
-
                 <div class="contact-item reveal">
                     <span class="contact-item-icon">📱</span>
                     <h4>Téléphone</h4>
                     <p>+33 6 XX XX XX XX</p>
                 </div>
-
                 <div class="contact-item reveal">
                     <span class="contact-item-icon">📍</span>
                     <h4>Localisation</h4>
@@ -306,5 +234,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>
