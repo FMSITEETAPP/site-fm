@@ -677,11 +677,17 @@ img.slide-screenshot-single {
 .skill-icon { font-size: 1.5rem; }
 
 .about-visual {
-    height: 500px; background: var(--gradient);
+    height: 500px;
     border-radius: 30px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 10rem;
+    overflow: hidden;
     box-shadow: 0 20px 60px rgba(202,148,234,0.3);
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /* ===================== CONTACT ===================== */
@@ -789,7 +795,7 @@ footer p { opacity: 0.7; }
     .services-grid    { grid-template-columns: 1fr; }
     .about-content    { grid-template-columns: 1fr; }
     .skills-list      { grid-template-columns: 1fr; }
-    .about-visual     { height: 300px; font-size: 6rem; }
+    .about-visual     { height: 300px; }
     .contact-form     { padding: 1.5rem; }
 
     .slide {
