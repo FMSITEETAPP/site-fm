@@ -413,8 +413,6 @@ section { width: 100%; padding: 6rem 5%; }
 #portfolio .section-subtitle { color: var(--white); }
 
 .portfolio-slider { position: relative; width: 100%; }
-
-/* overflow:hidden sur le contenu uniquement — les flèches restent cliquables */
 .slider-overflow { overflow: hidden; }
 
 .slide {
@@ -689,7 +687,6 @@ img.slide-screenshot-single {
 /* ===================== CONTACT ===================== */
 #contact { background: var(--light); }
 
-/* Un seul max-width pour contact-wrapper */
 .contact-wrapper {
     max-width: 800px;
     margin-left: auto;
@@ -734,9 +731,9 @@ img.slide-screenshot-single {
 .contact-item:hover { transform: translateY(-5px); border-color: var(--purple); box-shadow: 0 10px 30px rgba(202,148,234,0.2); }
 .contact-item-icon { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
 .contact-item h4 { font-weight: 700; margin-bottom: 0.5rem; color: var(--dark); }
-.contact-item p { color: #666; }
-.contact-item a { color: var(--accent); text-decoration: none; }
-.contact-item a:hover { text-decoration: underline; }
+.contact-item p { color: #888; }
+.contact-item a { color: var(--purple); text-decoration: none; }
+.contact-item a:hover { text-decoration: underline; color: var(--pink); }
 
 /* ===================== FOOTER ===================== */
 footer {
@@ -839,6 +836,41 @@ footer p { opacity: 0.7; }
     }
     .slider-arrow--left  { left: 0.5rem; }
     .slider-arrow--right { right: 0.5rem; }
+
+    
+    .slide-images {
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+    
+    
+    
+    
+    
+    .slide-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .slide-title-text {
+        min-height: 60px;
+    }
+
+
+    
+    img.slide-screenshot-side {
+        width: 80% !important;
+        height: 180px !important;
+        max-width: none !important;
+    }
+    
+    img.slide-screenshot-single {
+        width: 80% !important;
+        height: 180px !important;
+        max-width: none !important;
+    }
+
 }
 
 /* ===================== FOOTER LEGAL ===================== */
@@ -852,12 +884,12 @@ footer p { opacity: 0.7; }
     font-family: 'Plus Jakarta Sans', sans-serif;
     transition: color 0.3s ease;
 }
-.footer-link:hover { color: var(--accent); }
+.footer-link:hover { color: var(--golden); }
 
 /* ===================== MODAL MENTIONS LÉGALES ===================== */
 .modal-overlay {
     position: fixed; inset: 0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(45,18,64,0.85);
     backdrop-filter: blur(4px);
     z-index: 2000;
     display: flex; align-items: center; justify-content: center;
@@ -894,7 +926,7 @@ footer p { opacity: 0.7; }
     display: flex; align-items: center; justify-content: center;
     color: var(--dark); transition: all 0.2s ease;
 }
-.modal-close:hover { background: var(--primary); color: var(--white); }
+.modal-close:hover { background: var(--gradient); color: var(--white); }
 
 .modal-box h2 {
     font-size: 1.8rem; font-weight: 800;
@@ -907,7 +939,7 @@ footer p { opacity: 0.7; }
 
 .legal-section h3 {
     font-size: 1rem; font-weight: 700;
-    color: var(--primary); text-transform: uppercase;
+    color: var(--purple); text-transform: uppercase;
     letter-spacing: 1px; margin-bottom: 0.8rem;
     font-family: 'Space Mono', monospace;
 }
@@ -917,9 +949,7 @@ footer p { opacity: 0.7; }
     font-size: 0.95rem; margin-bottom: 0.6rem;
 }
 
-.legal-section ul {
-    list-style: none; margin: 0.5rem 0 0.8rem 0;
-}
+.legal-section ul { list-style: none; margin: 0.5rem 0 0.8rem 0; }
 .legal-section ul li {
     color: #555; font-size: 0.95rem;
     padding: 0.3rem 0 0.3rem 1.2rem;
@@ -927,14 +957,14 @@ footer p { opacity: 0.7; }
 }
 .legal-section ul li::before {
     content: '→'; position: absolute; left: 0;
-    color: var(--accent); font-weight: 700;
+    color: var(--pink); font-weight: 700;
 }
-.legal-section a { color: var(--accent); }
-.legal-section a:hover { text-decoration: underline; }
+.legal-section a { color: var(--purple); }
+.legal-section a:hover { text-decoration: underline; color: var(--pink); }
 
 .legal-note {
     background: var(--light);
-    border-left: 3px solid var(--primary);
+    border-left: 3px solid var(--purple);
     padding: 0.8rem 1rem;
     border-radius: 0 8px 8px 0;
     font-size: 0.9rem !important;

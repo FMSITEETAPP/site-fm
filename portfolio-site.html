@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="FM Development — Développeurs web et mobile passionnés, nous créons des solutions digitales sur-mesure : sites internet, applications iOS & Android, maintenance.">
-    <title>FM - Développement Web & Mobile</title>
+    <meta name="description" content="FM Site et App — Développeurs web et mobile passionnés, nous créons des solutions digitales sur-mesure : sites internet, applications iOS & Android, maintenance.">
+    <title>FM Site et App - Développement Web & Mobile</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css?v=67890">
 </head>
@@ -14,8 +14,12 @@
     <header>
         <nav aria-label="Navigation principale">
             <a href="#" class="logo">
-                <img src="logo-fm.jpg" alt="FM Development - Retour à l'accueil">
+                <img src="logo-fm.jpg" alt="FM Site et App - Retour à l'accueil">
+                <span class="logo-text">FM Site et App</span>
             </a>
+            <div class="nav-tagline" aria-hidden="true">
+                <span class="nav-tagline-text">Développement Web &amp; Mobile sur-mesure</span>
+            </div>
             <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">&#9776;</button>
             <ul class="nav-links" id="navLinks" role="list">
                 <li><a href="#services">Services</a></li>
@@ -30,6 +34,12 @@
 
         <!-- Hero -->
         <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-particles" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
             <div class="hero-content">
                 <h1 id="hero-title">Transformez vos idées en <br><span class="highlight">applications exceptionnelles</span></h1>
                 <p>Développeurs web et mobile passionnés, nous créons des solutions digitales sur-mesure pour propulser votre entreprise vers le succès.</p>
@@ -49,7 +59,7 @@
             </div>
             <div class="services-grid">
                 <div class="service-card reveal">
-                    <span class="service-icon" aria-hidden="true">&#x1F4BB;</span>
+                    <img src="site-internet.png" alt="Création de sites internet" class="service-img">
                     <h3>Création de sites internet</h3>
                     <p>Sites vitrines, portfolios, e-commerce ou plateformes sur-mesure — nous concevons des sites modernes, rapides et optimisés pour tous les écrans.</p>
                     <ul class="service-list">
@@ -59,7 +69,7 @@
                     </ul>
                 </div>
                 <div class="service-card reveal">
-                    <span class="service-icon" aria-hidden="true">&#x1F4F1;</span>
+                    <img src="application.png" alt="Création d'applications" class="service-img">
                     <h3>Création d'applications</h3>
                     <p>Applications iOS et Android natives ou cross-platform, pensées pour être performantes, intuitives et taillées pour vos besoins métier.</p>
                     <ul class="service-list">
@@ -69,7 +79,7 @@
                     </ul>
                 </div>
                 <div class="service-card reveal">
-                    <span class="service-icon" aria-hidden="true">&#x1F6E0;&#xFE0F;</span>
+                    <img src="maintenance-support.png" alt="Maintenance et support" class="service-img">
                     <h3>Maintenance &amp; Support</h3>
                     <p>Votre projet livré, on reste là. Mises à jour, corrections, évolutions — nous assurons la continuité et la stabilité de vos outils digitaux.</p>
                     <ul class="service-list">
@@ -86,7 +96,7 @@
             <div class="section-header reveal">
                 <div class="section-tag">Portfolio</div>
                 <h2 class="section-title" id="portfolio-title">Nos Réalisations</h2>
-                <p class="section-subtitle">Découvrez quelques-uns des projets sur lesquels nous avons travaillé</p>
+                <p class="section-subtitle">Découvrez nos projets développés avec expertise</p>
             </div>
 
             <div class="portfolio-slider" role="region" aria-label="Slider portfolio" aria-roledescription="carrousel">
@@ -95,57 +105,72 @@
                 <div class="slider-overflow">
                     <div class="slider-track" id="sliderTrack" aria-live="polite">
 
+                        <!-- PROJET 1 : CONJUGO -->
                         <div class="slide active" role="group" aria-roledescription="diapositive" aria-label="1 sur 3">
-                            <div class="slide-image" style="background: linear-gradient(135deg, #1e9aa1 0%, #081c34 100%);">
-                                <span class="slide-emoji" aria-hidden="true">&#x1F4DA;</span>
+                            <div class="slide-images">
+                                <img src="conjugo1.jpg" alt="Conjugo Screenshot 1" class="slide-screenshot-side">
+                                <img src="conjugo2.jpg" alt="Conjugo Screenshot 2" class="slide-screenshot-side">
                             </div>
                             <div class="slide-content">
                                 <div class="slide-number">01 / 03</div>
-                                <div class="section-tag">Application Mobile</div>
-                                <h3>Conjugaison Multilingue</h3>
-                                <p>Une application mobile complète permettant d'apprendre et pratiquer la conjugaison des verbes en espagnol et en anglais. L'utilisateur peut s'exercer à travers des quiz interactifs, suivre sa progression au fil du temps et consulter des tableaux de conjugaison détaillés pour chaque temps et mode.</p>
-                                <p>Le projet a été pensé pour être intuitif et engageant, avec un système de niveaux progressifs et des rappels quotidiens pour maintenir l'apprentissage sur la durée.</p>
-                                <div class="tech-tags">
-                                    <span class="tech-tag">React Native</span>
-                                    <span class="tech-tag">JavaScript</span>
-                                    <span class="tech-tag">Firebase</span>
+                                <div class="section-tag">Application Android</div>
+                                <div class="slide-title-row">
+                                    <img src="logo-conjugo.webp" alt="Conjugo" class="slide-logo">
+                                    <div class="slide-title-text">
+                                        <h3>CONJUGO</h3>
+                                        <h4 class="slide-subtitle">Conjugaison espagnole</h4>
+                                    </div>
                                 </div>
+                                <p>Application Android pour apprendre la conjugaison espagnole de manière méthodique. Points forts : suivi statistique détaillé, dictée intégrée, leçons structurées pour tous les temps, large base de verbes.</p>
+                                <p>Une approche honnête et efficace de l'apprentissage, sans promesse miracle — juste de la pratique structurée et des résultats mesurables.</p>
+
+                                <a href="https://play.google.com/store/apps/details?id=com.conjugamaster.app" target="_blank" rel="noopener" class="btn btn-primary slide-btn">
+                                    <span>Voir sur Play Store</span>
+                                    <span style="font-size: 1.2rem;">&#8594;</span>
+                                </a>
                             </div>
                         </div>
 
+                        <!-- PROJET 2 : CARTODIAG -->
                         <div class="slide" role="group" aria-roledescription="diapositive" aria-label="2 sur 3">
-                            <div class="slide-image" style="background: linear-gradient(135deg, #a5340f 0%, #1e9aa1 100%);">
-                                <span class="slide-emoji" aria-hidden="true">&#x1F5FA;&#xFE0F;</span>
+                            <div class="slide-images">
+                                <img src="cartodiag1.jpg" alt="CartoDiag Screenshot 1" class="slide-screenshot-side">
+                                <img src="cartodiag2.jpg" alt="CartoDiag Screenshot 2" class="slide-screenshot-side">
                             </div>
                             <div class="slide-content">
                                 <div class="slide-number">02 / 03</div>
-                                <div class="section-tag">Application Web</div>
-                                <h3>Application de Cartographie</h3>
-                                <p>Une solution de cartographie interactive permettant à ses utilisateurs de visualiser, créer et partager des points d'intérêt géolocalisés en temps réel. L'interface propose plusieurs couches cartographiques, des filtres avancés et un mode hors-ligne pour une utilisation sur le terrain.</p>
-                                <p>L'application intègre une API de routage pour calculer des itinéraires optimisés, ainsi qu'un système de notifications pour alerter les utilisateurs d'événements à proximité de leur position.</p>
-                                <div class="tech-tags">
-                                    <span class="tech-tag">React</span>
-                                    <span class="tech-tag">Mapbox</span>
-                                    <span class="tech-tag">Node.js</span>
+                                <div class="section-tag">Application Mobile Pro</div>
+                                <div class="slide-title-row">
+                                    <img src="logo-cartodiag.png" alt="CartoDiag" class="slide-logo">
+                                    <div class="slide-title-text">
+                                        <h3>CARTODIAG</h3>
+                                        <h4 class="slide-subtitle">Diagnostic SSP</h4>
+                                    </div>
                                 </div>
+                                <p>Solution mobile professionnelle pour Sites et Sols Pollués, développée pour un acteur du secteur SSP. Optimisée pour usage terrain avec interface robuste et fonctionnalités métier ciblées.</p>
+                                <p>Points forts : exports QGIS/Excel natifs, scan code-barres pour échantillons, export photos géolocalisées, interface terrain optimisée pour gants et conditions difficiles.</p>
+
                             </div>
                         </div>
 
+                        <!-- PROJET 3 : FM DEVELOPMENT -->
                         <div class="slide" role="group" aria-roledescription="diapositive" aria-label="3 sur 3">
-                            <div class="slide-image" style="background: linear-gradient(135deg, #081c34 0%, #1e9aa1 100%);">
-                                <span class="slide-emoji" aria-hidden="true">&#x1F6D2;</span>
+                            <div class="slide-images">
+                                <img src="fond-ecran-site.png" alt="FM Site" class="slide-screenshot-single">
                             </div>
                             <div class="slide-content">
                                 <div class="slide-number">03 / 03</div>
-                                <div class="section-tag">Site E-commerce</div>
-                                <h3>Plateforme E-commerce</h3>
-                                <p>Une plateforme e-commerce sur-mesure avec catalogue produit complet, gestion des stocks en temps réel, paiements sécurisés multi-devises et un tableau de bord administrateur permettant de piloter l'ensemble de l'activité commerciale.</p>
-                                <p>Le site inclut un moteur de recommandations personnalisées, un système de codes promo, la gestion des retours et un module d'analyse des ventes avec exports automatisés pour la comptabilité.</p>
-                                <div class="tech-tags">
-                                    <span class="tech-tag">Vue.js</span>
-                                    <span class="tech-tag">Stripe</span>
-                                    <span class="tech-tag">MongoDB</span>
+                                <div class="section-tag">Site Web Vitrine</div>
+                                <div class="slide-title-row">
+                                    <img src="logo-fm.jpg" alt="FM Development" class="slide-logo">
+                                    <div class="slide-title-text">
+                                        <h3>FM DEVELOPMENT</h3>
+                                        <h4 class="slide-subtitle">Notre portfolio</h4>
+                                    </div>
                                 </div>
+                                <p>Notre propre site vitrine, conçu pour démontrer notre maîtrise du développement front-end. Design moderne avec animations fluides, navigation intuitive et expérience utilisateur soignée.</p>
+                                <p>Points forts : slider tactile avec swipe gestures, animations subtiles et performantes, responsive parfait desktop/mobile, architecture code propre et maintenable.</p>
+
                             </div>
                         </div>
 
@@ -220,14 +245,14 @@
                         <p><a href="mailto:fmsiteetapp@gmail.com">fmsiteetapp@gmail.com</a></p>
                     </div>
                     <div class="contact-item reveal">
-                        <span class="contact-item-icon" aria-hidden="true">&#x26A1;</span>
-                        <h4>Réponse rapide</h4>
-                        <p>Sous 24h ouvrées</p>
-                    </div>
-                    <div class="contact-item reveal">
                         <span class="contact-item-icon" aria-hidden="true">&#x1F4F1;</span>
                         <h4>Téléphone</h4>
                         <p><a href="tel:+33783727696">07 83 72 76 96</a></p>
+                    </div>
+                    <div class="contact-item reveal">
+                        <span class="contact-item-icon" aria-hidden="true">&#x26A1;</span>
+                        <h4>Réponse rapide</h4>
+                        <p>Sous 24h ouvrées</p>
                     </div>
                 </div>
             </div>
@@ -237,7 +262,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 FM Development. Tous droits réservés.</p>
+        <p>&copy; 2025 FM Site et App. Tous droits réservés.</p>
         <p class="footer-legal"><button class="footer-link" id="openLegal">Mentions légales</button></p>
     </footer>
 
@@ -251,12 +276,12 @@
                 <h3>1. Éditeur du site</h3>
                 <p>Le présent site est édité par :</p>
                 <ul>
-                    <li><strong>Nom commercial :</strong> FM Development</li>
+                    <li><strong>Nom commercial :</strong> FM Site et App</li>
                     <li><strong>Email :</strong> <a href="mailto:fmsiteetapp@gmail.com">fmsiteetapp@gmail.com</a></li>
                     <li><strong>Téléphone :</strong> 07 83 72 76 96</li>
                     <li><strong>Pays :</strong> France</li>
                 </ul>
-                <p class="legal-note">FM Development est un nom commercial. Aucune entité juridique immatriculée n'est associée à ce nom à ce jour.</p>
+                <p class="legal-note">FM Site et App est un nom commercial. Aucune entité juridique immatriculée n'est associée à ce nom à ce jour.</p>
             </section>
 
             <section class="legal-section">
@@ -270,7 +295,7 @@
 
             <section class="legal-section">
                 <h3>3. Propriété intellectuelle</h3>
-                <p>L'ensemble du contenu de ce site (textes, images, visuels, structure) est la propriété exclusive de FM Development, sauf mention contraire. Toute reproduction, représentation, modification ou exploitation, totale ou partielle, est strictement interdite sans autorisation préalable écrite.</p>
+                <p>L'ensemble du contenu de ce site (textes, images, visuels, structure) est la propriété exclusive de FM Site et App, sauf mention contraire. Toute reproduction, représentation, modification ou exploitation, totale ou partielle, est strictement interdite sans autorisation préalable écrite.</p>
             </section>
 
             <section class="legal-section">
@@ -286,7 +311,7 @@
 
             <section class="legal-section">
                 <h3>6. Limitation de responsabilité</h3>
-                <p>FM Development s'efforce de maintenir les informations de ce site à jour et exactes. Toutefois, nous ne pouvons garantir l'exactitude, la complétude ou l'actualité des informations publiées. FM Development décline toute responsabilité pour tout dommage direct ou indirect lié à l'utilisation du site.</p>
+                <p>FM Site et App s'efforce de maintenir les informations de ce site à jour et exactes. Toutefois, nous ne pouvons garantir l'exactitude, la complétude ou l'actualité des informations publiées. FM Site et App décline toute responsabilité pour tout dommage direct ou indirect lié à l'utilisation du site.</p>
             </section>
 
             <section class="legal-section">
