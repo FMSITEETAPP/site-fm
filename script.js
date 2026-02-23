@@ -73,15 +73,16 @@ document.addEventListener('DOMContentLoaded', () => {
             if (Math.abs(diff) > 50) slidePortfolio(diff > 0 ? 1 : -1);
         });
 
-        // Swipe trackpad desktop (deltaX)
-        let wheelTimer = null;
+        // Swipe trackpad desktop (deltaX) - un seul slide par geste
+        let lastWheelTime = 0;
         sliderTrack.addEventListener('wheel', e => {
             if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
                 e.preventDefault();
-                clearTimeout(wheelTimer);
-                wheelTimer = setTimeout(() => {
+                const now = Date.now();
+                if (now - lastWheelTime > 1200) {
                     slidePortfolio(e.deltaX > 0 ? 1 : -1);
-                }, 50);
+                    lastWheelTime = now;
+                }
             }
         }, { passive: false });
     }
@@ -170,5 +171,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
 });
