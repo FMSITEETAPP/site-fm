@@ -71,7 +71,7 @@ nav {
 
 .logo-text {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 800;
     color: var(--dark);
     letter-spacing: -0.3px;
@@ -104,7 +104,7 @@ nav {
 
 .nav-tagline-text {
     font-family: 'Space Mono', monospace;
-    font-size: 0.92rem;
+    font-size: 1rem;
     color: #6e6e6e;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -152,7 +152,7 @@ nav {
     color: var(--dark);
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 1.15rem;
     position: relative;
     transition: color 0.3s ease;
 }
@@ -355,8 +355,9 @@ section { width: 100%; padding: 6rem 5%; }
     gap: 2.5rem;
 }
 
+/* Fond des cartes - Options: #fff8ed (beige doré) | #f5e6ff (rose-violet) | #ffe6f0 (rose tendre) */
 .service-card {
-    background: var(--light);
+    background: #f5e6ff;
     padding: 3rem 2rem;
     border-radius: 20px;
     border: 3px solid transparent;
@@ -773,6 +774,20 @@ footer p { opacity: 0.7; }
 }
 
 /* ===================== RESPONSIVE ===================== */
+    
+    .nav-links a {
+        font-size: 0.88rem;
+    }
+    
+    /* Réduire légèrement le texte central */
+/* ===================== RESPONSIVE MEDIUM ===================== */
+@media (max-width: 1330px) and (min-width: 769px) {
+    /* Cacher le texte central quand l'écran devient trop petit */
+    .nav-tagline {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .mobile-menu-btn { display: block; }
     nav { gap: 0; }
@@ -824,10 +839,6 @@ footer p { opacity: 0.7; }
     }
     
 
-    .slide-logo {
-        width: 70px;
-        height: 70px;
-    }
     
     .slide-title-text {
         min-height: 70px;
@@ -854,10 +865,6 @@ footer p { opacity: 0.7; }
     
     
     
-    .slide-logo {
-        width: 60px;
-        height: 60px;
-    }
     
     .slide-title-text {
         min-height: 60px;
