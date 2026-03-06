@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Init du slider
     slides = document.querySelectorAll('.slide');
-    dots   = document.querySelectorAll('.dot');
-    total  = slides.length;
+    dots = document.querySelectorAll('.dot');
+    total = slides.length;
 
     // Boutons fleches
     const prevBtn = document.getElementById('prevSlide');
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ===================== MOBILE MENU =====================
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const navLinks      = document.getElementById('navLinks');
+    const navLinks = document.getElementById('navLinks');
 
     function toggleMenu() {
         const isOpen = navLinks.classList.toggle('active');
@@ -127,15 +127,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ===================== FORM =====================
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Merci pour votre message ! Nous vous recontacterons tres bientot.');
-            contactForm.reset();
-        });
+    contactForm.addEventListener('submit', () => {
+        localStorage.setItem('formSubmitted', 'true');
+    });
+    if (localStorage.getItem('formSubmitted') === 'true') {
+        localStorage.removeItem('formSubmitted');
+        alert('Merci pour votre message ! Nous vous recontacterons très bientôt.');
     }
-
     // ===================== HEADER SHADOW =====================
     const header = document.querySelector('header');
     window.addEventListener('scroll', () => {
@@ -145,9 +143,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
 
     // ===================== MODAL MENTIONS LÉGALES =====================
-    const legalModal  = document.getElementById('legalModal');
-    const openLegal   = document.getElementById('openLegal');
-    const closeLegal  = document.getElementById('closeLegal');
+    const legalModal = document.getElementById('legalModal');
+    const openLegal = document.getElementById('openLegal');
+    const closeLegal = document.getElementById('closeLegal');
 
     if (openLegal && legalModal) {
         openLegal.addEventListener('click', () => {
