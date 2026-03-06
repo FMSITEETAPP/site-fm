@@ -252,7 +252,8 @@
                 <p class="section-subtitle">Prêt à démarrer ? Contactez-nous pour un devis gratuit</p>
             </div>
             <div class="contact-wrapper">
-                <form class="contact-form reveal" id="contactForm" novalidate>
+                <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/xbdzjply"
+                    method="POST">
                     <div class="form-group">
                         <label for="name">Nom complet</label>
                         <input type="text" id="name" name="name" required autocomplete="name">
@@ -270,13 +271,19 @@
                         <label for="message">Décrivez votre projet</label>
                         <textarea id="message" name="message" required></textarea>
                     </div>
+
+                    <input type="hidden" name="_next" value="https://fmsiteetapp.github.io/site-fm/portfolio-site.html">
+                    <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
                     <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer le message</button>
                 </form>
                 <div class="contact-info">
                     <div class="contact-item reveal">
                         <span class="contact-item-icon" aria-hidden="true">&#x1F4E7;</span>
                         <h4>Email</h4>
-                        <p><a href="/cdn-cgi/l/email-protection#8debe0fee4f9e8e8f9ecfdfdcdeae0ece4e1a3eee2e0"><span class="__cf_email__" data-cfemail="1b7d7668726f7e7e6f7a6b6b5b7c767a727735787476">[email&#160;protected]</span></a></p>
+                        <p><a href="/cdn-cgi/l/email-protection#8debe0fee4f9e8e8f9ecfdfdcdeae0ece4e1a3eee2e0"><span
+                                    class="__cf_email__"
+                                    data-cfemail="1b7d7668726f7e7e6f7a6b6b5b7c767a727735787476">[email&#160;protected]</span></a>
+                        </p>
                     </div>
                     <div class="contact-item reveal">
                         <span class="contact-item-icon" aria-hidden="true">&#x26A1;</span>
@@ -311,7 +318,11 @@
                 <p>Le présent site est édité par :</p>
                 <ul>
                     <li><strong>Nom commercial :</strong> FM Site et App</li>
-                    <li><strong>Email :</strong> <a href="/cdn-cgi/l/email-protection#ed8b809e84998888998c9d9dad8a808c8481c38e8280"><span class="__cf_email__" data-cfemail="06606b756f7263637267767646616b676f6a2865696b">[email&#160;protected]</span></a></li>
+                    <li><strong>Email :</strong> <a
+                            href="/cdn-cgi/l/email-protection#ed8b809e84998888998c9d9dad8a808c8481c38e8280"><span
+                                class="__cf_email__"
+                                data-cfemail="06606b756f7263637267767646616b676f6a2865696b">[email&#160;protected]</span></a>
+                    </li>
                     <li><strong>Téléphone :</strong> <a href="tel:+33783727696">Appelez-nous</a></li>
                     <li><strong>Pays :</strong> France</li>
                 </ul>
@@ -342,7 +353,11 @@
                     tiers.</p>
                 <p>Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et
                     Libertés, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour
-                    exercer ce droit, contactez-nous à : <a href="/cdn-cgi/l/email-protection#77111a041e0312120316070737101a161e1b5914181a"><span class="__cf_email__" data-cfemail="cea8a3bda7baababbaafbebe8ea9a3afa7a2e0ada1a3">[email&#160;protected]</span></a></p>
+                    exercer ce droit, contactez-nous à : <a
+                        href="/cdn-cgi/l/email-protection#77111a041e0312120316070737101a161e1b5914181a"><span
+                            class="__cf_email__"
+                            data-cfemail="cea8a3bda7baababbaafbebe8ea9a3afa7a2e0ada1a3">[email&#160;protected]</span></a>
+                </p>
             </section>
 
             <section class="legal-section">
@@ -369,4 +384,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
