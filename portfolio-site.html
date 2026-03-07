@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="FM Site et App — Développeurs web et mobile passionnés, nous créons des solutions digitales sur-mesure : sites internet, applications iOS & Android, maintenance.">
+    <title>FM Site et App - Développement Web & Mobile</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=aurora5">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav aria-label="Navigation principale">
+            <a href="#" class="logo">
+                <img src="logo-fm.png" alt="FM Site et App - Retour à l'accueil">
+                <span class="logo-text">FM Site et App</span>
+            </a>
+            <div class="nav-tagline" aria-hidden="true">
+                <span class="nav-tagline-text">Développement Web &amp; Mobile sur-mesure</span>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Ouvrir le menu" aria-expanded="false"
+                aria-controls="navLinks">&#9776;</button>
+            <ul class="nav-links" id="navLinks" role="list">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-particles" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="hero-content">
+                <h1 id="hero-title">Transformez vos idées en <br><span class="highlight">applications
+                        exceptionnelles</span></h1>
+                <p>Développeurs web et mobile passionnés, nous créons des solutions digitales sur-mesure pour propulser
+                    votre entreprise vers le succès.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Demander un devis</a>
+                    <a href="#portfolio" class="btn btn-secondary">Voir nos projets</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" aria-labelledby="services-title">
+            <div class="section-header reveal">
+                <div class="section-tag">Nos Services</div>
+                <h2 class="section-title" id="services-title">Ce que nous faisons de mieux</h2>
+                <p class="section-subtitle">Des prestations complètes pour tous vos besoins digitaux</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <img src="site-internet.png" alt="Création de sites internet" class="service-img">
+                    <h3>Création de sites internet</h3>
+                    <p>Sites vitrines, portfolios, e-commerce ou plateformes sur-mesure — nous concevons des sites
+                        modernes, rapides et optimisés pour tous les écrans.</p>
+                    <ul class="service-list">
+                        <li>Design responsive &amp; moderne</li>
+                        <li>Optimisation SEO</li>
+                        <li>Expérience utilisateur soignée</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal">
+                    <img src="application.png" alt="Création d'applications" class="service-img">
+                    <h3>Création d'applications</h3>
+                    <p>Applications iOS et Android natives ou cross-platform, pensées pour être performantes, intuitives
+                        et taillées pour vos besoins métier.</p>
+                    <ul class="service-list">
+                        <li>iOS &amp; Android</li>
+                        <li>Interface intuitive</li>
+                        <li>Intégration API &amp; backend</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal">
+                    <img src="maintenance-support.png" alt="Maintenance et support" class="service-img">
+                    <h3>Maintenance &amp; Support</h3>
+                    <p>Votre projet livré, on reste là. Mises à jour, corrections, évolutions — nous assurons la
+                        continuité et la stabilité de vos outils digitaux.</p>
+                    <ul class="service-list">
+                        <li>Suivi technique continu</li>
+                        <li>Corrections &amp; mises à jour</li>
+                        <li>Accompagnement personnalisé</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio" aria-labelledby="portfolio-title">
+            <div class="section-header reveal">
+                <div class="section-tag">Portfolio</div>
+                <h2 class="section-title" id="portfolio-title">Nos Réalisations</h2>
+                <p class="section-subtitle">Découvrez nos projets développés avec expertise</p>
+            </div>
+
+            <div class="portfolio-slider" role="region" aria-label="Slider portfolio" aria-roledescription="carrousel">
+                <button class="slider-arrow slider-arrow--left" id="prevSlide" onclick="slidePortfolio(1)"
+                    aria-label="Projet précédent">&#8592;</button>
+
+                <div class="slider-overflow">
+                    <div class="slider-track" id="sliderTrack" aria-live="polite">
+
+                        <!-- PROJET 1 : CONJUGO -->
+                        <div class="slide active" role="group" aria-roledescription="diapositive" aria-label="1 sur 3">
+                            <div class="slide-images">
+                                <img src="conjugo1.jpg" alt="Conjugo Screenshot 1" class="slide-screenshot-side">
+                                <img src="conjugo2.jpg" alt="Conjugo Screenshot 2" class="slide-screenshot-side">
+                            </div>
+                            <div class="slide-content">
+                                <div class="slide-number">01 / 03</div>
+                                <div class="section-tag">Application Android</div>
+                                <div class="slide-title-row">
+                                    <img src="logo-conjugo.webp" alt="Conjugo" class="slide-logo">
+                                    <div class="slide-title-text">
+                                        <h3>CONJUGO</h3>
+                                        <h4 class="slide-subtitle">Conjugaison espagnole</h4>
+                                    </div>
+                                </div>
+                                <p>Application Android pour apprendre la conjugaison espagnole de manière méthodique.
+                                    Points forts : suivi statistique détaillé, dictée intégrée, leçons structurées pour
+                                    tous les temps, large base de verbes.</p>
+                                <p>Une approche honnête et efficace de l'apprentissage, sans promesse miracle — juste de
+                                    la pratique structurée et des résultats mesurables.</p>
+
+                                <a href="https://play.google.com/store/apps/details?id=com.conjugamaster.app"
+                                    target="_blank" rel="noopener" class="btn btn-primary slide-btn">
+                                    <span>Voir sur Play Store</span>
+                                    <span style="font-size: 1.2rem;">&#8594;</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- PROJET 2 : CARTODIAG -->
+                        <div class="slide" role="group" aria-roledescription="diapositive" aria-label="2 sur 3">
+                            <div class="slide-images">
+                                <img src="cartodiag1.jpg" alt="CartoDiag Screenshot 1" class="slide-screenshot-side">
+                                <img src="cartodiag2.jpg" alt="CartoDiag Screenshot 2" class="slide-screenshot-side">
+                            </div>
+                            <div class="slide-content">
+                                <div class="slide-number">02 / 03</div>
+                                <div class="section-tag">Application Mobile Pro</div>
+                                <div class="slide-title-row">
+                                    <img src="logo-cartodiag.png" alt="CartoDiag" class="slide-logo">
+                                    <div class="slide-title-text">
+                                        <h3>CARTODIAG</h3>
+                                        <h4 class="slide-subtitle">Diagnostic SSP</h4>
+                                    </div>
+                                </div>
+                                <p>Solution mobile professionnelle pour Sites et Sols Pollués, développée pour un acteur
+                                    du secteur SSP. Optimisée pour usage terrain avec interface robuste et
+                                    fonctionnalités métier ciblées.</p>
+                                <p>Points forts : exports QGIS/Excel natifs, scan code-barres pour échantillons, export
+                                    photos géolocalisées, interface terrain optimisée pour gants et conditions
+                                    difficiles.</p>
+
+                            </div>
+                        </div>
+
+                        <!-- PROJET 3 : FM DEVELOPMENT -->
+                        <div class="slide" role="group" aria-roledescription="diapositive" aria-label="3 sur 3">
+                            <div class="slide-images">
+                                <img src="fond-ecran-neodash.png" alt="FM Site" class="slide-screenshot-single">
+                            </div>
+                            <div class="slide-content">
+                                <div class="slide-number">03 / 03</div>
+                                <div class="section-tag">Jeu en ligne</div>
+                                <div class="slide-title-row">
+                                    
+                                    <div class="slide-title-text">
+                                        <h3>NEO DASH</h3>
+                                        <h4 class="slide-subtitle">Gestion de database</h4>
+                                    </div>
+                                </div>
+                                <p>Notre propre jeu en ligne, conçu pour démontrer notre maîtrise des bases de données en lignes. 
+                                    Design rétro avec animations fluides, navigation intuitive et expérience utilisateur soignée.</p>
+                                <p>Points forts : connexion en ligne pour être au sein du classement, possibilité de jouer en "invité", 
+                                    responsive parfait pc/tablette/mobile. </p>
+
+                                <a href="https://fmsiteetapp.github.io/Neo-Dash/"
+                                    target="_blank" rel="noopener" class="btn btn-primary slide-btn">
+                                    <span>Testez par vous-même !</span>
+                                    <span style="font-size: 1.2rem;">&#8594;</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="slider-arrow slider-arrow--right" id="nextSlide" onclick="slidePortfolio(-1)"
+                    aria-label="Projet suivant">&#8594;</button>
+
+                <div class="slider-dots" role="tablist" aria-label="Navigation du carrousel">
+                    <span class="dot active" role="tab" aria-selected="true" aria-label="Projet 1" tabindex="0"></span>
+                    <span class="dot" role="tab" aria-selected="false" aria-label="Projet 2" tabindex="0"></span>
+                    <span class="dot" role="tab" aria-selected="false" aria-label="Projet 3" tabindex="0"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" aria-labelledby="about-title">
+            <div class="section-header reveal">
+                <div class="section-tag">À Propos</div>
+                <h2 class="section-title" id="about-title">Qui sommes-nous ?</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <h3>Une équipe de développeurs passionnés</h3>
+                    <p>Nous sommes une équipe de 2 amis d'enfance lyonnais qui souhaitons mettre nos compétences en matiere
+                        de développement d'applications et de sites a votre service.</p>
+                    <p>Peu importe où vous en êtes — idée sur papier, projet en cours ou site à refondre — vous
+                        travaillez directement avec nous, du premier échange à la mise en ligne. Pas d'agence, pas
+                        d'intermédiaire : juste deux développeurs investis et un résultat qui tient ses promesses.</p>
+                    <div class="skills-list">
+                        <div class="skill-item"><span class="skill-icon" aria-hidden="true">&#x26A1;</span>
+                            Réactif</div>
+                        <div class="skill-item"><span class="skill-icon" aria-hidden="true">&#x1F442;</span> A l'écoute
+                        </div>
+                        <div class="skill-item"><span class="skill-icon" aria-hidden="true">&#x1F3AF;</span> Adaptable
+                        </div>
+                        <div class="skill-item"><span class="skill-icon" aria-hidden="true">&#x1F48E;</span> Serieux
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual reveal">
+                    <img src="vieux-lyon.jpg" alt="Le Vieux-Lyon" class="about-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" aria-labelledby="contact-title">
+            <div class="section-header reveal">
+                <div class="section-tag">Contact</div>
+                <h2 class="section-title" id="contact-title">Discutons de votre projet</h2>
+                <p class="section-subtitle">Prêt à démarrer ? Contactez-nous pour un devis gratuit</p>
+            </div>
+            <div class="contact-wrapper">
+                <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/xbdzjply"
+                    method="POST">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Objet</label>
+                        <input type="text" id="subject" name="subject" required
+                            placeholder="Ex : Création d'un site vitrine">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Décrivez votre projet</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <input type="hidden" name="_next" value="https://fmsiteetapp.github.io/site-fm/portfolio-site.html">
+                    <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer le message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-item reveal">
+                        <span class="contact-item-icon" aria-hidden="true">&#x1F4E7;</span>
+                        <h4>Email</h4>
+                        <p><a href="/cdn-cgi/l/email-protection#8debe0fee4f9e8e8f9ecfdfdcdeae0ece4e1a3eee2e0"><span
+                                    class="__cf_email__"
+                                    data-cfemail="1b7d7668726f7e7e6f7a6b6b5b7c767a727735787476">[email&#160;protected]</span></a>
+                        </p>
+                    </div>
+                    <div class="contact-item reveal">
+                        <span class="contact-item-icon" aria-hidden="true">&#x26A1;</span>
+                        <h4>Réponse rapide</h4>
+                        <p>Sous 24h ouvrées</p>
+                    </div>
+                    <div class="contact-item reveal">
+                        <span class="contact-item-icon" aria-hidden="true">&#x1F4F1;</span>
+                        <h4>Téléphone</h4>
+                        <p><a href="tel:+33783727696">Appelez-nous</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 FM Site et App. Tous droits réservés.</p>
+        <p class="footer-legal"><button class="footer-link" id="openLegal">Mentions légales</button></p>
+    </footer>
+
+    <!-- Modal Mentions Légales -->
+    <div class="modal-overlay" id="legalModal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-box">
+            <button class="modal-close" id="closeLegal" aria-label="Fermer">&#10005;</button>
+            <h2 id="modal-title">Mentions Légales</h2>
+
+            <section class="legal-section">
+                <h3>1. Éditeur du site</h3>
+                <p>Le présent site est édité par :</p>
+                <ul>
+                    <li><strong>Dénomination sociale : </strong>Mathis FAURE</li>
+                    <li><strong>Nom commercial : </strong>FM Site et App</li>
+                    <li><strong>Forme juridique : </strong>Micro-entreprise</li>
+                    <li><strong>Siège social : </strong>20 Impasse du Pont, 01700 Beynost</li>
+                    <li><strong>Numéro SIRET : </strong>931 766 638 00015 - Immatriculé au RNE</li>
+                    <li><strong>Numéro TVA : </strong>TVA non applicable, art. 293 B du CGI</li>
+                    <li><strong>Directeur de la publication : </strong>MARIE Florian et FAURE Mathis</li>
+                    <li><strong>Email : </strong>fmsiteetapp@gmail.com</li>
+                    <li><strong>Téléphone : </strong>07 83 72 76 96</li>
+                </ul>
+            </section>
+
+            <section class="legal-section">
+                <h3>2. Hébergement</h3>
+                <p>L'hébergeur du site est à compléter selon votre prestataire.</p>
+                <ul>
+                    <li><strong>Hébergeur :</strong> À compléter</li>
+                    <li><strong>Adresse :</strong> À compléter</li>
+                </ul>
+            </section>
+
+            <section class="legal-section">
+                <h3>3. Propriété intellectuelle</h3>
+                <p>L'ensemble du contenu de ce site (textes, images, visuels, structure) est la propriété exclusive de
+                    FM Site et App, sauf mention contraire. Toute reproduction, représentation, modification ou
+                    exploitation, totale ou partielle, est strictement interdite sans autorisation préalable écrite.</p>
+            </section>
+
+            <section class="legal-section">
+                <h3>4. Protection des données personnelles</h3>
+                <p>Les informations collectées via le formulaire de contact (nom, email, message) sont utilisées
+                    uniquement pour répondre à vos demandes. Elles ne sont ni cédées, ni vendues, ni partagées avec des
+                    tiers.</p>
+                <p>Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et
+                    Libertés, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour
+                    exercer ce droit, contactez-nous à : <a
+                        href="/cdn-cgi/l/email-protection#77111a041e0312120316070737101a161e1b5914181a"><span
+                            class="__cf_email__"
+                            data-cfemail="cea8a3bda7baababbaafbebe8ea9a3afa7a2e0ada1a3">[email&#160;protected]</span></a>
+                </p>
+            </section>
+
+            <section class="legal-section">
+                <h3>5. Cookies</h3>
+                <p>Ce site n'utilise pas de cookies de traçage ou publicitaires. Aucune donnée de navigation n'est
+                    collectée à des fins commerciales.</p>
+            </section>
+
+            <section class="legal-section">
+                <h3>6. Limitation de responsabilité</h3>
+                <p>FM Site et App s'efforce de maintenir les informations de ce site à jour et exactes. Toutefois, nous
+                    ne pouvons garantir l'exactitude, la complétude ou l'actualité des informations publiées. FM Site et
+                    App décline toute responsabilité pour tout dommage direct ou indirect lié à l'utilisation du site.
+                </p>
+            </section>
+
+            <section class="legal-section">
+                <h3>7. Droit applicable</h3>
+                <p>Le présent site et ses mentions légales sont soumis au droit français. En cas de litige, les
+                    tribunaux français seront seuls compétents.</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
